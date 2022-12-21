@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maryana Reznychenko</title>
+    <style>
+        body {
+            background-image: url('../pictures/1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Name">
+        <header>
+            <h3>You might think: "There is not a lot here." Well, there is more coming soon...</h3>
+        </header>
+
+
+    </div>
+    <nav class="navigation">
+        <nav>
+            <a href="index.html">home page</a>
+            <a href="about.html">about</a>
+            <!-- <a href="experience.html">experience</a>
+            <a href="education.html">education</a> -->
+            <a class="active" href="portfolio.html">portfolio</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </nav>
+
+    <nav>
+        <article class="education">
+            <h3>Some projects of mine:</h3>
+        </article>
+    </nav>
+
+
+
+
+    <button data-modal-target="#modal">Get more info about it</button>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Tools used for projects:</div>
+            <button data-close-button class="close-button">&times;</button>
+
+        </div>
+        <div class="modal-body">
+            <strong>The "Guess the number game"</strong>
+            <p>Created with tools such as<em>HTMl, CSS and JavaSkript.</em></p>
+            <p>You can check it here, on my GitHub account:</p>
+            <a href="https://github.com/mariannaua/Guess-the-number-game">Guess-number-game</a>
+
+            <strong>The "CV page"</strong>
+            <p>Created with tools such as<em>HTMl, CSS and JavaSkript.</em></p>
+
+            <strong>The "trafiklight" and the "play card"</strong>
+            <p>Are more simple objects. They was created by using <em>HTMl and CSS</em>only.</p>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div class="portfolio">
+
+        <div class="picture">
+            <img class="ref" src="../pictures/project4.png" alt="Guess the number game">
+            <h3 class="banner">Guess the number game</h3>
+        </div><br>
+
+        <div class="picture">
+            <img class="ref" src="../pictures/project1.png" alt="Maryanas CV">
+            <h3 class="banner">CV page</h3>
+        </div><br>
+
+        <div class="picture">
+            <img class="ref" src="../pictures/project2.png" alt="traficlight">
+            <h3 class="banner">traficlight</h3>
+        </div><br>
+
+        <div class="picture">
+            <img class="ref" src="../pictures/project3.png" alt="play card">
+            <h3 class="banner">play card</h3>
+        </div><br>
+    </div>
+
+    <div class="summary">
+        <footer>
+            <h4>There are also other stuff under developing right now. </h4>
+        </footer>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+
+</html>

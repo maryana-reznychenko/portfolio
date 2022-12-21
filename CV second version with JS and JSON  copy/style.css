@@ -1,0 +1,271 @@
+:root {
+  --main-margin: 1em;
+}
+
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+  margin: 1vw;
+  width: auto;
+  height: auto;
+}
+
+.body {
+  height: auto;
+  margin: auto;
+  margin: 0;
+}
+
+.Name {
+  color: rgb(73, 71, 71);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center, space-between;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  /* flex: center; */
+}
+
+.navigation {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(73, 71, 71);
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: rgb(107, 32, 44);
+  font-style: oblique;
+  text-decoration: overline;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 30%;
+  height: 20%;
+  clip-path: circle();
+}
+
+footer {
+  color: rgb(73, 71, 71);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-basis: 1 1 auto;
+  text-align: center;
+}
+
+/* !!! "about" starts here: */
+.navigation a.active {
+  /*here is the same for all article in every chapter of navigation*/
+  color: rgb(107, 32, 44);
+  background-color: rgb(215, 187, 192);
+  text-decoration: overline;
+}
+
+article {
+  /*here is the same for all article in every chapter of navigation*/
+  display: flex;
+  justify-content: space-between;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+  height: auto;
+  color: rgb(180, 67, 86);
+}
+
+ul > li {
+  justify-content: space-between;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: medium;
+  text-align: left;
+  height: auto;
+}
+
+/* !!! "experience" and "education" starts here: */
+section {
+  color: rgb(73, 71, 71);
+}
+
+strong {
+  display: flex;
+  padding-top: 1.5em;
+}
+
+.places :hover {
+  text-decoration: underline;
+  color: rgb(138, 23, 42);
+  transform: scale(1.02);
+}
+
+/*Styling of modal and overlay starts here*/
+
+button {
+  background-color: rgb(215, 187, 192);
+  color: black;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1);
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /*scale (0) - take away all view*/
+  transition: 200ms ease-in-out;
+  border: 1px rgb(107, 32, 44);
+  border-radius: 10px;
+  z-index: 10;
+  background-color: rgb(215, 187, 192);
+  width: 30em;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(107, 32, 44);
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10em auto;
+}
+
+.modal-body a {
+  color: rgb(120, 23, 118);
+}
+
+p em {
+  text-decoration: underline;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(83, 79, 79, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* !!! "portfolio" starts here: */
+.portfolio {
+  padding: 1em 0 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  color: rgb(39, 38, 38);
+  font-size: medium;
+}
+
+.ref {
+  width: 20em;
+  height: auto;
+  align-items: center;
+  object-fit: cover;
+  cursor: pointer; /* this make 'the hand' from arrow on the object */
+}
+.banner {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+/*Flex for Ipad and PC*/
+@media screen and (min-width: 700px) {
+  .portfolio .modal {
+    flex-direction: column;
+  }
+  .navigation {
+    flex-direction: column;
+    columns: repeat(6, 1 fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .portfolio {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .navigation {
+    flex-direction: row;
+    columns: repeat(6, 1 fr);
+  }
+}
+
+/* !!! "contact" starts here: */
+
+ul {
+  font-size: larger;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: rgb(73, 71, 71);
+  font-size: 1.2em;
+  align-items: center;
+}
+
+a {
+  color: rgb(73, 71, 71);
+}
+
+h4 {
+  color: rgb(73, 71, 71);
+}

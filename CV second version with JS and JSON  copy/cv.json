@@ -1,0 +1,72 @@
+{
+    "experience": [
+        
+        {
+            "position": "Sales Co-worker",
+            "place": "IKEA Kungens Kurva - Stockholm, Sweden",
+            "period": "January 2018 - till now",
+            "description": "Experience in the sale, merchandising and logistic chain, customer service."
+        },
+ 
+        {
+            "position": "Jobs in the service industry",
+            "place": "Cafe Söder 99, Hemfrid - Stockholm, Sweden",
+            "period": "November 2016 - October 2017",
+            "description": " "
+        },
+        {
+            "position": "Deputy Head of the Finance and Economy Department",
+            "place": "Logistics Department Structural Unit of Lviv Railway, Ukrzaliznytsia - Lviv, Ukraine",
+            "period": "March 2011 - May 2016",
+            "description": "Auditing within daughters companies. Reporting to companies management, tax and state offices. Bookkeeper's consulting."
+        },
+        {
+            "position": "Accountant",
+            "place": "Logistics Department Structural Unit of Lviv Railway, Ukrzaliznytsia - Lviv, Ukraine",
+            "period": "September 2009 - February 2011",
+            "description": "Bookkeeping and reporting of every section within the activity of the enterprise"
+        },
+
+        {
+            "position": "Accountant",
+            "place": "Lviv Wagons Depot and Logistics Department Structural Unit of Lviv Railway, Ukrzaliznytsia - Lviv, Ukraine",
+            "period": "July 2001 - August 2009",
+            "description": "Bookkeeping and reporting of every section within the activity of the enterprise"
+        }
+    ],
+
+
+    "education": [
+        {
+            "line": "UX/UI designer med frontend competence, student",
+            "place": "CHAS ACADEMY - Stockholm, Sweden",
+            "period": "September 2022 - till now"
+        },
+        {
+            "line": "Swedish Language",
+            "place": "ABF-Stockholm, NTI Skolan - Stockholm, Sweden",
+            "period": "2016 - 2020"
+        },
+        {
+            "line": "English Language",
+            "place": "Concorde, Centre of foreign languages - Lviv, Ukraine",
+            "period": "2014 - 2015"
+        },
+        {
+            "line": "Design and interior decoration",
+            "place": "Ukrainian Branch of the ESEC (eshko.ua) - Kharkiv, Ukraine",
+            "period": "2004 - 2006"
+        },
+        {
+            "line": "Economist",
+            "place": "STATE ACADEMY of RAILWAY TRANSPORT - Kharkiv, Ukraine",
+            "period": "2001 - 2005"
+        }, 
+        {
+            "line": "Accounting",
+            "place": "LVIV RAILWAY TRANSPORT COLLEGE - Lviv, Ukraine",
+            "period": "1999 - 2001"
+        }
+      
+    ]
+    }
